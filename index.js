@@ -5,6 +5,8 @@ const knexConfig = require('./knexfile');
 
 const db = knex(knexConfig.development);
 
+console.log(db);
+
 const server = express();
 
 server.use(helmet());

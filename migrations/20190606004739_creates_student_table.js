@@ -1,7 +1,7 @@
 exports.up = function(knex, Promise) {
 	return knex.schema.createTable('students', function(table) {
 		table.increments();
-		table.text('name').notNullAble();
+		table.text('name').notNullable();
 		table
 			.integer('cohort_id')
 			.unsigned()
